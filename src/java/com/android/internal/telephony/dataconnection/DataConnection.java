@@ -1783,13 +1783,11 @@ public class DataConnection extends StateMachine {
                     return HANDLED;
                 case EVENT_CONNECT:
                     if (DBG) log("DcInactiveState: mag.what=EVENT_CONNECT");
-<<<<<<< HEAD
-=======
+                    
                     if (isPdpRejectConfigEnabled() && !isDataCallConnectAllowed()) {
                         if (DBG) log("DcInactiveState: skip EVENT_CONNECT");
                         return HANDLED;
                     }
->>>>>>> tmp
 
                     ConnectionParams cp = (ConnectionParams) msg.obj;
 
