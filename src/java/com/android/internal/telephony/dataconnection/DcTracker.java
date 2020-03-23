@@ -1866,11 +1866,7 @@ public class DcTracker extends Handler {
         }
     }
 
-<<<<<<< HEAD
-    boolean isPermanentFailure(@FailCause int dcFailCause) {
-=======
     protected boolean isPermanentFailure(@FailCause int dcFailCause) {
->>>>>>> tmp
         return (DataFailCause.isPermanentFailure(mPhone.getContext(), dcFailCause,
                 mPhone.getSubId())
                 && (mAttached.get() == false || dcFailCause != DataFailCause.SIGNAL_LOST));
