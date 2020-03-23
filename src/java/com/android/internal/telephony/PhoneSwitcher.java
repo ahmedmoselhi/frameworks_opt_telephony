@@ -622,7 +622,6 @@ public class PhoneSwitcher extends Handler {
         }
     }
 
-<<<<<<< HEAD
     protected boolean isEmergency() {
         if (isInEmergencyCallbackMode()) return true;
         for (Phone p : mPhones) {
@@ -637,9 +636,6 @@ public class PhoneSwitcher extends Handler {
     }
 
     protected boolean isInEmergencyCallbackMode() {
-=======
-    private boolean isInEmergencyCallbackMode() {
->>>>>>> tmp
         for (Phone p : mPhones) {
             if (p == null) continue;
             if (p.isInEcm()) return true;
@@ -975,11 +971,7 @@ public class PhoneSwitcher extends Handler {
         }
     }
 
-<<<<<<< HEAD
     private int phoneIdForRequest(NetworkRequest netRequest) {
-=======
-    protected int phoneIdForRequest(NetworkRequest netRequest) {
->>>>>>> tmp
         int subId = getSubIdFromNetworkSpecifier(netRequest.networkCapabilities
                 .getNetworkSpecifier());
 
@@ -1013,14 +1005,11 @@ public class PhoneSwitcher extends Handler {
         return phoneId;
     }
 
-<<<<<<< HEAD
     protected int getSubIdFromNetworkRequest(NetworkRequest networkRequest) {
         NetworkSpecifier specifier = networkRequest.networkCapabilities.getNetworkSpecifier();
         return getSubIdFromNetworkSpecifier(specifier);
     }
-
-=======
->>>>>>> tmp
+    
     protected int getSubIdFromNetworkSpecifier(NetworkSpecifier specifier) {
         if (specifier == null) {
             return DEFAULT_SUBSCRIPTION_ID;
@@ -1286,11 +1275,7 @@ public class PhoneSwitcher extends Handler {
                 subId, needValidation ? 1 : 0, callback).sendToTarget();
     }
 
-<<<<<<< HEAD
     private boolean isPhoneInVoiceCall(Phone phone) {
-=======
-    protected boolean isPhoneInVoiceCall(Phone phone) {
->>>>>>> tmp
         if (phone == null) {
             return false;
         }
