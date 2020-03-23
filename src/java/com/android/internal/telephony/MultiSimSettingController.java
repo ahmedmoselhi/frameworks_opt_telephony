@@ -448,11 +448,9 @@ public class MultiSimSettingController extends Handler {
      * 4) If non above is met, clear the default value to INVALID.
      *
      */
-<<<<<<< HEAD
+
     private void updateDefaults() {
-=======
-    protected void updateDefaults() {
->>>>>>> tmp
+    
         if (DBG) log("updateDefaults");
 
         if (!isReadyToReevaluate()) return;
@@ -652,11 +650,8 @@ public class MultiSimSettingController extends Handler {
                 || change == PRIMARY_SUB_SWAPPED);
     }
 
-<<<<<<< HEAD
+
     private void disableDataForNonDefaultNonOpportunisticSubscriptions() {
-=======
-    protected void disableDataForNonDefaultNonOpportunisticSubscriptions() {
->>>>>>> tmp
         if (!isReadyToReevaluate()) return;
 
         int defaultDataSub = mSubController.getDefaultDataSubId();
@@ -793,11 +788,7 @@ public class MultiSimSettingController extends Handler {
         }
     }
 
-<<<<<<< HEAD
     private void log(String msg) {
-=======
-    protected void log(String msg) {
->>>>>>> tmp
         Log.d(LOG_TAG, msg);
     }
 
