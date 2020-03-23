@@ -3470,6 +3470,7 @@ public class ImsPhoneCallTracker extends CallTracker implements ImsPullCall {
                 sendCallStartFailedDisconnect(callInfo.first, callInfo.second);
                 break;
             }
+
             case EVENT_RETRY_ON_IMS_WITHOUT_RTT: {
                 Pair<ImsCall, ImsReasonInfo> callInfo = (Pair<ImsCall, ImsReasonInfo>) msg.obj;
 
@@ -3504,6 +3505,7 @@ public class ImsPhoneCallTracker extends CallTracker implements ImsPullCall {
 
                 break;
             }
+
             case EVENT_REDIAL_WITHOUT_RTT: {
                 Pair<ImsCall, ImsReasonInfo> callInfo = (Pair<ImsCall, ImsReasonInfo>) msg.obj;
                 removeMessages(EVENT_REDIAL_WITHOUT_RTT);

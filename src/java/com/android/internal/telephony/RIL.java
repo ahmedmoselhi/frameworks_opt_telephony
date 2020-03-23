@@ -5943,11 +5943,20 @@ public class RIL extends BaseCommands implements CommandsInterface {
             }
         }
         switch (voiceRat) {
+<<<<<<< HEAD
+=======
+            case ServiceState.RIL_RADIO_TECHNOLOGY_GPRS: /* fallthrough */
+            case ServiceState.RIL_RADIO_TECHNOLOGY_EDGE: /* fallthrough */
+>>>>>>> tmp
             case ServiceState.RIL_RADIO_TECHNOLOGY_UMTS: /* fallthrough */
             case ServiceState.RIL_RADIO_TECHNOLOGY_HSDPA: /* fallthrough */
             case ServiceState.RIL_RADIO_TECHNOLOGY_HSUPA: /* fallthrough */
             case ServiceState.RIL_RADIO_TECHNOLOGY_HSPA: /* fallthrough */
             case ServiceState.RIL_RADIO_TECHNOLOGY_HSPAP: /* fallthrough */
+<<<<<<< HEAD
+=======
+            case ServiceState.RIL_RADIO_TECHNOLOGY_GSM: /* fallthrough */
+>>>>>>> tmp
                 break;
             default:
                 // If we are not currently on WCDMA/HSPA, then we don't need to do a fixup.
